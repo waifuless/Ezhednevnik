@@ -1,0 +1,9 @@
+﻿  DairyExecutor.cpp
+C:\Users\Владимир\source\repos\Ezhednevnik\Ezhednevnik\DairyExecutor.cpp(101,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Владимир\source\repos\Ezhednevnik\Ezhednevnik\DairyExecutor.cpp(109,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Владимир\source\repos\Ezhednevnik\Ezhednevnik\DairyExecutor.cpp(136,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Владимир\source\repos\Ezhednevnik\Ezhednevnik\DairyExecutor.cpp(143,19): warning C4018: >: несоответствие типов со знаком и без знака
+C:\Users\Владимир\source\repos\Ezhednevnik\Ezhednevnik\DairyExecutor.cpp(167,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Владимир\source\repos\Ezhednevnik\Ezhednevnik\DairyExecutor.cpp(184,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Владимир\source\repos\Ezhednevnik\Ezhednevnik\DairyExecutor.cpp(218,20): warning C4018: <: несоответствие типов со знаком и без знака
+  Ezhednevnik.vcxproj -> C:\Users\Владимир\source\repos\Ezhednevnik\Debug\Ezhednevnik.exe
