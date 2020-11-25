@@ -3,11 +3,12 @@
 #include <iostream>
 #include <windows.h>
 #include "StreamChecker.h"
+#include <regex>
 
 class Note
 {
 private:
-	enum Importance {
+	enum Importance {  //черечисление для степени важности заметок
 		LOW,
 		REGULAR,
 		HIGH

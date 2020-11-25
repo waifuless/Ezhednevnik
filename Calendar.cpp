@@ -9,7 +9,7 @@ void Calendar::printMonth(int monthNumber, int yearNumber) {
         "»юль", "јвгуст","—ент€брь","ќкт€брть", "Ќо€брь","ƒекабрь" };
 
 
-    time(&now); //get current timeinfo and modify it to the user's choice
+    time(&now); //принимаем текущее врем€, в котором изменим мес€ц и год
     timeinfo = localtime(&now);
     timeinfo->tm_year = yearNumber - 1900; //годы нумеруютс€ с 1900
     timeinfo->tm_mon = monthNumber - 1;
@@ -20,13 +20,13 @@ void Calendar::printMonth(int monthNumber, int yearNumber) {
               << "_______________________________"<<std::endl;
 
 
-    for (i = 1; i < 32; i++) //year days with "overload"  
+    for (i = 1; i < 32; i++) 
     {
 
         timeinfo->tm_mday = i;
-        mktime(timeinfo);//call mktime: the whole timeinfo for the day will be set 
+        mktime(timeinfo);//устанавливаетс€ информаци€ о дне(день недели) 
 
-        if (timeinfo->tm_mon == monthNumber)
+        if (timeinfo->tm_mon == monthNumber) //цикл завершитс€ досрочно, если мы перешли на следующий мес€ц
             break;
 
         if (i == 1)
@@ -41,7 +41,7 @@ void Calendar::printMonth(int monthNumber, int yearNumber) {
             }
         }
 
-        std::cout<<std::setw(4)<<timeinfo->tm_mday; //routine
+        std::cout<<std::setw(4)<<timeinfo->tm_mday;
 
         if (timeinfo->tm_wday == 0)
             std::cout<<std::endl;

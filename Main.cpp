@@ -7,8 +7,8 @@ int menu();
 
 int main() {
 	setlocale(LC_ALL, "rus");
-	while (1) {
-		switch (menu()) {
+	while (1) {   //программа работает, пока пользователь не выберет "выход"
+		switch (menu()) {  //вызываем меню
 		case 1: DairyExecutor::viewCalendar();
 			break;
 		case 2: DairyExecutor::makeNote();
@@ -30,7 +30,7 @@ int main() {
 	}
 }
 
-int menu() {
+int menu() {  //для для выбора действия
 	int choice = 0;
 	std::cout << std::endl << "Выберите действие : "
 		<< std::endl << "1)Посмотреть календарь"

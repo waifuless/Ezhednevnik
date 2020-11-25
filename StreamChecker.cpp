@@ -1,6 +1,6 @@
 #include "StreamChecker.h"
 
-bool StreamChecker::isStreamFail(std::istream& in) {
+bool StreamChecker::isStreamFail(std::istream& in) { //метод проверяет, произошло ли неудачное извлечение.
 	if (in.fail()) // если предыдущее извлечение оказалось неудачным,
 	{
 		in.clear(); // то возвращаем cin в 'обычный' режим работы
